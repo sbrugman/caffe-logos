@@ -1,0 +1,14 @@
+net: "../caffe/models/finetune_flickr_logos/alexnet_0.0001/train_val.prototxt"
+test_iter: 80
+test_interval: 250
+base_lr: 0.0001
+lr_policy: "step"
+gamma: 0.1
+stepsize: 100000
+display: 50
+max_iter: 3000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 500
+snapshot_prefix: "../caffe/models/finetune_flickr_logos/alexnet_0.0001/finetune_alexnet"
+solver_mode: CPU
